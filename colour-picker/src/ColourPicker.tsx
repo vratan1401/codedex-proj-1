@@ -75,7 +75,7 @@ const ColourPicker = () => {
                 {colors.map((color: any, index) => {
                     return (
                         <div key={index}
-                            className="colour-swatch"
+                            className="colour-swatch polaroid"
                             style={{ backgroundColor: color.hex }}
                             onMouseEnter={() => { mouseEnter(color) }}
                             onMouseLeave={() => { mouseLeave() }}

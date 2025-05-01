@@ -1,7 +1,6 @@
 .colour-picker {
-  max-width: 1200px;
-  margin: 0 auto;
-  /* padding: 20px; */
+  margin: auto;
+  padding: 20px;
   align-items: center;
 }
 
@@ -13,22 +12,55 @@
 }
 
 .colour-swatch {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   width: 80px;
   height: 80px;
+  border-top: 8px;
+  border-right: 8px;
+  border-left: 8px;
   border-bottom: 30px;
   border-radius: 10%;
-  border-color: transparent;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+
   display: inline-block;
   position: relative;
   cursor: pointer;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   margin: 30px;
+  box-shadow: 4px 4px 12px rgb(195, 158, 138);
 }
 
 .colour-swatch:hover {
   transform: scale(1.4);
-
-  border-color: white;
-  border-style: solid;
+  transform: translateY(-10px) rotate(-5deg) scale(1.05);
 }
+
+/* .polaroid {
+  display: inline-block;
+  background: #fff;
+  border: 10px solid #fff;
+  border-bottom-width: 25px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px;
+  position: relative;
+} */
+
+/* Lift, rotate and deepen shadow on hover */
+/* .polaroid:hover { */
+/* } box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); 
+}
+
+
+/* Optional caption from a data-attribute */
+/* .polaroid::after {
+  content: attr(data-caption);
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.85em;
+  color: #333;
+} */

@@ -13,7 +13,7 @@ function App() {
         height: "100vh",
       }}
     >
-      <h1>hellow</h1>
+      <h1>Our New Colour Picker</h1>
       <ColourPicker />
     </div>
   )
